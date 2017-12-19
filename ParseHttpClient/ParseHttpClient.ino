@@ -37,7 +37,7 @@ void loop() {
         http.addHeader("X-Parse-Application-Id", "123456");
         http.addHeader("X-Parse-REST-API-KEY", "123456");
         http.addHeader("Content-Type", "application/json");
-        String data = "{\"t\":T, \"h\":H, \"tag\": 2}";
+        String data = "{\"t\":T, \"h\":H, \"tag\": 3}";
         data.replace("T",String(t));
         data.replace("H", String(h));
         int httpCode = http.POST(data);
